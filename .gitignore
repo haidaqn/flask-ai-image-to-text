@@ -1,26 +1,35 @@
-# Bỏ qua venv
+# .gitignore cho dự án Python Flask
+
+# Virtual environments
 venv/
 ENV/
 env/
 
-# Bỏ qua Python cache
+# Python bytecode và cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Bỏ qua file log
+# Log files
 *.log
 
-# Bỏ qua các file tạm
+# File tạm của hệ điều hành và editor
 .DS_Store
 *.swp
+*.swo
+*.bak
+*.tmp
 
-# bỏ qua sqlite
+# Database & migrations
 *.sqlite
+*.db
+migrations/
+instance/
 
-
-# không push ảnh 
+# Ảnh và tài liệu tải lên
+uploads/
+static/uploads/
 *.png
 *.jpg
 *.jpeg
@@ -34,4 +43,10 @@ __pycache__/
 *.docx
 *.doc
 
+# Flask specific
+*.env
+.env.*
+config.py
+
+# Node modules (nếu sử dụng frontend hoặc assets)
 node_modules/
