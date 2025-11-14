@@ -1,0 +1,37 @@
+# Bỏ qua venv
+venv/
+ENV/
+env/
+
+# Bỏ qua Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Bỏ qua file log
+*.log
+
+# Bỏ qua các file tạm
+.DS_Store
+*.swp
+
+# bỏ qua sqlite
+*.sqlite
+
+
+# không push ảnh 
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+*.webp
+*.svg
+*.pdf
+*.docx
+*.doc
+
+node_modules/
